@@ -27,6 +27,7 @@ warnings.filterwarnings('ignore', category = UserWarning, module = 'torchvision'
 
 
 def parse_args() -> None:
+	print("hello guys")
 	signal.signal(signal.SIGINT, lambda signal_number, frame: destroy())
 	program = argparse.ArgumentParser(formatter_class = lambda prog: argparse.HelpFormatter(prog, max_help_position = 120))
 	program.add_argument('-s', '--source', help = wording.get('source_help'), dest = 'source_path')
